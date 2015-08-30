@@ -15,6 +15,7 @@ $( function() {
         var ROL3403 = "September 17, 2015 13:00:00";
         var p4pexhibition = "September 18, 2015";
         var prototype2715 = "September 20, 2015 23:59:00";
+        var p4pcompendium = "Sep 25, 2015";
         var designandimpl715 = "September 27, 2015 23:59:00";
         var projectweek403 = "September 28, 2015";
         var ROL4403 = "October 8, 2015 13:00:00";
@@ -76,7 +77,14 @@ $( function() {
           render: function(data) {
             $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
           }
-        });        
+        });    
+        
+      $('#p4pcompendium.countdown.styled').countdown({
+        date: p4pcompendium,
+        render: function(data) {
+          $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+        }
+      });      
         
      $('#715designimplwriteup.countdown.styled').countdown({
           date: designandimpl715,
