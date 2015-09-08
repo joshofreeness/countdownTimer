@@ -8,8 +8,6 @@ Note: donate to remove backlink form the site
 */
 
 $( function() {
-        var p4pPoster = "Sep 7, 2015";
-        var p4pConf = "Sep 8, 2015";
         var p4pSeminars = "Sep 10, 2015"
         var p4pFinalReport = "Sep 14, 2015";
         var ROL3403 = "September 17, 2015 13:00:00";
@@ -27,22 +25,6 @@ $( function() {
         var exam715 = "October 30, 2015 14:15:00";
         var exam726 = "November 12, 2015 14:15:00";
 
-
-
-
-     $('#p4pPoster.countdown.styled').countdown({
-          date: p4pPoster,
-          render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-          }
-        });
-
-     $('#p4pConf.countdown.styled').countdown({
-          date: p4pConf,
-          render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-          }
-        });
 
      $('#p4pSeminars.countdown.styled').countdown({
           date: p4pSeminars,
