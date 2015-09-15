@@ -8,7 +8,6 @@ Note: donate to remove backlink form the site
 */
 
 $( function() {
-        var p4pFinalReport = "Sep 14, 2015";
         var ROL3403 = "September 17, 2015 13:00:00";
         var p4pexhibition = "September 18, 2015";
         var prototype2715 = "September 20, 2015 23:59:00";
