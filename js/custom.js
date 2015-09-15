@@ -8,8 +8,6 @@ Note: donate to remove backlink form the site
 */
 
 $( function() {
-        var p4pSeminars = "Sep 10, 2015"
-        var p4pFinalReport = "Sep 14, 2015";
         var ROL3403 = "September 17, 2015 13:00:00";
         var p4pexhibition = "September 18, 2015";
         var prototype2715 = "September 20, 2015 23:59:00";
@@ -18,27 +16,13 @@ $( function() {
         var projectweek403 = "September 28, 2015";
         var ROL4403 = "October 8, 2015 13:00:00";
         var evalwriteup715 = "October 11, 2015 23:59:00";
+        var test403 = "October 15, 2015";
         var finalreport726 = "October 16, 2015"  ;
         var reportandslides715 = "October 18, 2015 23:59:00";
         var finaldemos715 = "October 19, 2015"; 
         var ROL5403 = "October 22, 2015 13:00:00";    
         var exam715 = "October 30, 2015 14:15:00";
         var exam726 = "November 12, 2015 14:15:00";
-
-
-     $('#p4pSeminars.countdown.styled').countdown({
-          date: p4pSeminars,
-          render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-          }
-        });
-
-     $('#p4pFinalReport.countdown.styled').countdown({
-          date: p4pFinalReport,
-          render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-          }
-        });
         
      $('#rol3.countdown.styled').countdown({
           date: ROL3403,
@@ -94,7 +78,14 @@ $( function() {
           render: function(data) {
             $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
           }
-        });                     
+        });    
+
+     $('#403test.countdown.styled').countdown({
+          date: test403,
+          render: function(data) {
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+          }
+        });                   
 
      $('#726finalreport.countdown.styled').countdown({
           date: finalreport726,
