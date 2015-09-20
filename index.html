@@ -29,9 +29,13 @@ Donate to remove backlink form the site
 <!--<link href="css/animate.css" rel="stylesheet" media="screen">-->
 <link rel="stylesheet" href="css/styles.css" />
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+<!-- Include the AngularJS routing library -->
+<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 </head>
 
-<body>
+<body ng-app="DueDatesApp">
 
 <!--var p4pPoster = "Sep 7, 2015";
         var p4pConf = "Sep 8, 2015";
@@ -48,9 +52,13 @@ Donate to remove backlink form the site
       </div>
       <div class="heading text-center">
         <h2>Assignments are due...</h2>
-        <strong>Get your shit together!</strong> <p>700, 403, 726 & 715</p></div>
+        <strong>Get your shit together!</strong> 
+        <p>700, 403, 726 & 715</p>
+      </div>
 
-      <div class="heading text-center"> <strong>403 ROL</strong> <p>17th September 1pm 2%</p></div>
+      <div ng-view></div>
+
+      <!-- <div class="heading text-center"> <strong>403 ROL</strong> <p>17th September 1pm 2%</p></div>
       <div class="countdown styled" id="rol3"></div>
       <div class="heading text-center"> <strong>700 Exhibition</strong> <p>18th September 7.5%</p></div>
       <div class="countdown styled" id="p4pexhibition"></div>  
@@ -79,7 +87,7 @@ Donate to remove backlink form the site
       <div class="heading text-center"> <strong>715 Exam</strong> <p>30th October 2:15pm</p></div>
       <div class="countdown styled" id="715Exam"></div>
       <div class="heading text-center"> <strong>726 Exam</strong> <p>12th November 2:15pm</p></div>
-      <div class="countdown styled" id="726Exam"></div>
+      <div class="countdown styled" id="726Exam"></div> -->
       
     </div>
   </div>
@@ -97,5 +105,12 @@ Donate to remove backlink form the site
 <script src="js/Backstretch.js" type="text/javascript"></script> 
 <script src="js/custom.js" type="text/javascript"></script> 
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/HomeController.js"></script>
+
 </body>
 </html>
