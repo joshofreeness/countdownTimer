@@ -29,14 +29,19 @@ Donate to remove backlink form the site
 <!--<link href="css/animate.css" rel="stylesheet" media="screen">-->
 <link rel="stylesheet" href="css/styles.css" />
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+<!-- Include the AngularJS routing library -->
+<script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+<script src="js/humanize-duration.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/angular-timer.min.js"></script>
+<script src="js/modules/timerFilter.js"></script>
+
 </head>
 
-<body>
-
-<!--var p4pPoster = "Sep 7, 2015";
-        var p4pConf = "Sep 8, 2015";
-        var p4pSeminars = "Sep 10, 2015"
-        var p4pFinalReport = "Sep 14, 2015";-->
+<body ng-app="DueDatesApp">
 
 <!--/.header-->
 <div id="#top"></div>
@@ -48,39 +53,11 @@ Donate to remove backlink form the site
       </div>
       <div class="heading text-center">
         <h2>Assignments are due...</h2>
-        <strong>Get your shit together!</strong> <p>700, 403, 726 & 715</p></div>
-
-      <div class="heading text-center"> <strong>403 ROL</strong> <p>17th September 1pm 2%</p></div>
-      <div class="countdown styled" id="rol3"></div>
-      <div class="heading text-center"> <strong>700 Exhibition</strong> <p>18th September 7.5%</p></div>
-      <div class="countdown styled" id="p4pexhibition"></div>  
-      <div class="heading text-center"> <strong>715 Second prototype</strong> <p>20th September 11:59pm? 0%</p></div>
-      <div class="countdown styled" id="715prototype2"></div>  
-      <div class="heading text-center"> <strong>700 Compendium (Implementation)</strong> <p>25th September 30%</p></div>
-      <div class="countdown styled" id="p4pcompendium"></div>  
-      <div class="heading text-center"> <strong>715 Design & Impl write up</strong> <p>27th September 11:59pm 3%</p></div>
-      <div class="countdown styled" id="715designimplwriteup"></div>    
-      <div class="heading text-center"> <strong>403 Project Week</strong> <p>28th September</p></div>
-      <div class="countdown styled" id="sysweek"></div>  
-      <div class="heading text-center"> <strong>403 ROL</strong> <p>8th October 1pm 2%</p></div>
-      <div class="countdown styled" id="rol4"></div>
-      <div class="heading text-center"> <strong>715 Evaluation write up</strong> <p>11th October 11:59pm 4%</p></div>
-      <div class="countdown styled" id="715evalwriteup"></div>  
-      <div class="heading text-center"> <strong>403 Test</strong> <p>15th October 15%</p></div>
-      <div class="countdown styled" id="403test"></div>  
-      <div class="heading text-center"> <strong>726 Final Report</strong> <p>16th October 25%</p></div>
-      <div class="countdown styled" id="726finalreport"></div>  
-      <div class="heading text-center"> <strong>715 Final Report & Slides</strong> <p>18th October 11:59pm 5%</p></div>
-      <div class="countdown styled" id="715finalreportandslides"></div>  
-      <div class="heading text-center"> <strong>715 Final demos, repo freeze, video</strong> <p>19th - 23rd October 6%, 20%, 1.5%</p></div>
-      <div class="countdown styled" id="715finaldemos"></div> 
-      <div class="heading text-center"> <strong>403 ROL</strong> <p>22nd October 1pm 2%</p></div>
-      <div class="countdown styled" id="rol5"></div>
-      <div class="heading text-center"> <strong>715 Exam</strong> <p>30th October 2:15pm</p></div>
-      <div class="countdown styled" id="715Exam"></div>
-      <div class="heading text-center"> <strong>726 Exam</strong> <p>12th November 2:15pm</p></div>
-      <div class="countdown styled" id="726Exam"></div>
-      
+        <strong>Get your shit together!</strong> 
+        <p>700, 403, 726 & 715</p>
+      </div>
+      <div ng-view>
+      </div>      
     </div>
   </div>
 </section>
@@ -97,5 +74,12 @@ Donate to remove backlink form the site
 <script src="js/Backstretch.js" type="text/javascript"></script> 
 <script src="js/custom.js" type="text/javascript"></script> 
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/HomeController.js"></script>
+
 </body>
 </html>
