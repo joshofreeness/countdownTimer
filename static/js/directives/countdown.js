@@ -4,6 +4,6 @@ app.directive('countdown', function() {
     scope: { 
       info: '=' 
     }, 
-    templateUrl: 'js/directives/appInfo.html' 
+    templateUrl: 'static/js/directives/appInfo.html' 
   }; 
 });

@@ -70,7 +70,7 @@ var customScripts = {
 }
 $('document').ready(function () {
 	 $.backstretch(
-      "images/img2.jpg"
+      "static/images/img2.jpg"
     );
   
     customScripts.init();
