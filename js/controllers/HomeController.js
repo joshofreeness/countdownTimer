@@ -8,14 +8,14 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.items = 
 	[
 	{
-		title: '700 Compendium (Implementation)',
-		datetime: 1443096000000,
-		weighting: 30
-	},
-	{
 		title: '715 Design & Impl Write Up',
 		datetime: 1443268800000,
 		weighting: 3
+	},
+	{
+		title: '700 Compendium (Implementation)',
+		datetime: 1443096000000,
+		weighting: 30
 	},
 	{
 		title: '403 Project Week',

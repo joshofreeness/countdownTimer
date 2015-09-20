@@ -1,6 +1,6 @@
 <div class="main">
   <div class="container">
-    <div class="item heading text-center" ng-repeat="item in items | isFuture"> 
+    <div class="item heading text-center" ng-repeat="item in items | isFuture | orderBy: 'datetime'"> 
       <strong>{{ item.title }}</strong> 
       <p>{{ item.datetime | date : 'longDate' }} {{ item.datetime | date : 'shortTime' }} {{ item.weighting }}%</p>
       <div class="countdown styled">
