@@ -3,8 +3,14 @@
     <div class="item heading text-center" ng-repeat="item in items"> 
       <strong>{{ item.title }}</strong> 
       <p>{{ item.datetime | date : 'longDate' }} {{ item.datetime | date : 'shortTime' }} {{ item.weighting }}%</p>
-    </div>
-    <div class="countdown styled" id="rol3">
+      <div class="countdown styled">
+        <timer end-time="item.datetime">
+          <div>{{ ddays }}<span>days</span></div>
+          <div>{{ hhours }}<span>hours</span></div>
+          <div>{{ mminutes }}<span>minutes</span></div>
+          <div>{{ sseconds }}<span>seconds</span></div>
+        </timer>
+      </div>
     </div>
   </div>
 </div>

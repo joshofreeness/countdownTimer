@@ -33,6 +33,11 @@ Donate to remove backlink form the site
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
 <!-- Include the AngularJS routing library -->
 <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
+
+<script src="js/humanize-duration.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/angular-timer.min.js"></script>
+
 </head>
 
 <body ng-app="DueDatesApp">
@@ -55,8 +60,9 @@ Donate to remove backlink form the site
         <strong>Get your shit together!</strong> 
         <p>700, 403, 726 & 715</p>
       </div>
-
-      <div ng-view></div>
+      <div ng-view>
+        
+      </div>
 
       <!-- <div class="heading text-center"> <strong>403 ROL</strong> <p>17th September 1pm 2%</p></div>
       <div class="countdown styled" id="rol3"></div>

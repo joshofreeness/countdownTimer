@@ -1,4 +1,4 @@
-var app = angular.module('DueDatesApp', ['ngRoute']);
+var app = angular.module('DueDatesApp', ['ngRoute', 'timer']);
 
 app.config(function ($routeProvider) {
   $routeProvider
