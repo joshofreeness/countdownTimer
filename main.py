@@ -16,7 +16,7 @@ def universities():
 
 #TODO: Make this dependent on universities
 @app.route('/api/courses')	    
-def universities():
+def courses():
 	return "courses" 	
 
 
