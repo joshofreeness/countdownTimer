@@ -6,6 +6,10 @@ app = Flask(__name__)
 def root():
     return app.send_static_file('index.html')
 
+@app.route('/add')
+def add():
+    return app.send_static_file('index.html')    
+
 @app.route('/api')
 def api():
 	return "API SON!"  
