@@ -92,4 +92,4 @@ app.controller('HomeController', ['$scope', function($scope) {
 		weighting: 40
 	}
 	]
-}])
+}]);

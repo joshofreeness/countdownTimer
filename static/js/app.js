@@ -1,6 +1,6 @@
 var app = angular.module('DueDatesApp', ['ngRoute', 'timer', 'timerFilter']);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
   $routeProvider
     .when('/add', {
     	controller: 'CourseController',
@@ -13,4 +13,8 @@ app.config(function ($routeProvider) {
   	.otherwise({
     	redirectTo: '/'
   	});
+    $locationProvider.html5Mode({
+      enabled: true,
+      requireBase: false
+    });
 });
