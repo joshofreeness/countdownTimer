@@ -1,6 +1,14 @@
 from flask import Flask, request
+
+# MongoDB
+import pymongo
+from pymongo import MongoClient
+
 # set the project root directory as the static folder, you can set others.
 app = Flask(__name__)
+
+client = MongoClient('localhost', 27017)
+db = client.countdown_database
 
 @app.route('/')
 def root():
@@ -16,7 +24,8 @@ def api():
 
 @app.route('/api/universities')	    
 def universities():
-	return "Universities" 
+	return db.universities
+	#return "Universities" 
 
 #TODO: Make this dependent on universities
 @app.route('/api/courses')	    
