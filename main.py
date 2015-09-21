@@ -6,6 +6,22 @@ app = Flask(__name__)
 def root():
     return app.send_static_file('index.html')
 
+@app.route('/api')
+def api():
+	return "API SON!"  
+
+@app.route('/api/universities')	    
+def universities():
+	return "Universities" 
+
+#TODO: Make this dependent on universities
+@app.route('/api/courses')	    
+def universities():
+	return "courses" 	
+
+
+ 
+
 if __name__ == '__main__':
     app.debug = True
     app.run()
