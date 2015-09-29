@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, redirect
 
 # MongoDB
 import pymongo
@@ -11,13 +11,13 @@ client = MongoClient('localhost', 27017)
 db = client.countdown_database
 
 # Delete all data and repopulate with hardcoded values:
-result = db.universities.delete_many({})
-university = {"name" : "University of Auckland"}
-db.universities.insert_one(university)
+# result = db.universities.delete_many({})
+# university = {"name" : "University of Auckland"}
+# db.universities.insert_one(university)
 
-result = db.courses.delete_many({})
-courses = [{"number" : "700"}, {"number" : "715"}, {"number" : "403"}, {"number" : "726"}]
-db.courses.insert_many(courses)
+# result = db.courses.delete_many({})
+# courses = [{"number" : "700"}, {"number" : "715"}, {"number" : "403"}, {"number" : "726"}]
+# db.courses.insert_many(courses)
 
 @app.route('/')
 def root():
@@ -41,7 +41,7 @@ def universities():
 	#return "Universities" 
 
 #TODO: Make this dependent on universities
-@app.route('/api/courses')	    
+@app.route('/api/courses', methods=['GET'])	    
 def courses():
 	cursor = db.courses.find()
 	result = ""
@@ -51,6 +51,10 @@ def courses():
 	#return "courses" 	
 
 
+@app.route('/api/courses', methods=['POST'])
+def courses_post():
+	
+	return redirect('/add')
  
 
 if __name__ == '__main__':

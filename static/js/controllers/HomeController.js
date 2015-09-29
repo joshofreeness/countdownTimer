@@ -26,7 +26,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 		course: '403',
 		title: 'Project Week',
 		datetime: 1443351600000,
-		weighting: 40
+		weighting: 45
 	},
 	{
 		university: 'University of Auckland',
